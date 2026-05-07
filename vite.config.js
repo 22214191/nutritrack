@@ -1,9 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
-
 export default defineConfig({
   base: '/nutritrack/',
+  build: {
+    target: 'esnext'
+  },
   plugins: [react()],
   resolve: {
     alias: {
